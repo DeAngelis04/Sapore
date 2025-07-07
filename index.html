@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sapore De Angelis - Tienda Artesanal Italiana</title>
+  <meta name="description" content="Pastas artesanales italianas, tienda online con carrito lateral." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+      <li><a href="#productos" class="nav-link">Productos</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      <li>
+        <button id="btn-carrito" aria-label="Abrir carrito">
+          Carrito (<span id="carrito-count">0</span>)
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+
+
+  <section id="inicio" class="section-inicio">
+    <div class="inicio-texto">
+      <h1>Sapore De Angelis</h1>
+      <p>Pastas artesanales italianas hechas con amor, tradición y los mejores ingredientes.</p>
+      <a href="#productos" class="btn btn-primary">Ver Productos</a>
+    </div>
+    <div class="inicio-imagen">
+      <img src="img/arreglo-de-plato-de-trufa-angulo-alto.jpg" alt="Plato de pasta artesanal" />
+    </div>
+  </section>
+
+
+  <section id="productos" class="section-productos">
+    <h2>Nuestros Productos</h2>
+    <div id="productos-list" class="productos-grid"></div>
+  </section>
+
+<section id="contacto" class="section-contacto">
+  <h2>Contacto</h2>
+  <form id="contact-form" action="https://formspree.io/f/mwpldebb" method="POST">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required />
+
+    <label for="email">Correo Electrónico</label>
+    <input type="email" id="email" name="_replyto" required />
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+
+</main>
+
+
+<aside id="carrito-panel" aria-label="Carrito de compras" tabindex="-1">
+  <header>
+    <h2>Tu Carrito</h2>
+    <button id="cerrar-carrito" aria-label="Cerrar carrito">&times;</button>
+  </header>
+  <div id="carrito-items" class="carrito-items"></div>
+  <footer>
+    <h3>Total: $<span id="carrito-total">0</span></h3>
+    <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+  </footer>
+</aside>
+
+
+<div id="overlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
