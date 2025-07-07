@@ -31,5 +31,30 @@
 - **Google Fonts** (Playfair Display y Montserrat)
 
 ---
+🔧 Instrucciones de instalación
+📁 Opción 1: Ver en local
+Cloná el repositorio o descargá el ZIP
 
+bash
+Copiar
+Editar
+git clone https://github.com/DeAngelis04/Sapore.git
+O descargalo manualmente desde el botón verde Code > Download ZIP.
+
+Abrí el proyecto
+
+Entrá a la carpeta.
+
+Hacé doble clic en index.html para abrirlo en tu navegador.
+
+⚠️ Importante: Para probar el formulario de contacto (Formspree), el sitio debe estar alojado online.
+
+🌐 Opción 2: Publicar en GitHub Pages
+Subí el proyecto a un nuevo repositorio en GitHub.
+
+Andá a Settings > Pages.
+
+En la sección "Source", seleccioná branch: main y / (root).
+
+Guardá y esperá unos segundos: GitHub te dará una URL pública para compartir.
 
